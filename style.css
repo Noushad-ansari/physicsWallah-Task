@@ -1,0 +1,28 @@
+#file {
+    margin: 15px;
+    border: oldlace;
+    background: lightblue;
+    color: rgb(7, 0, 0);
+    padding: 10px 25px;
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+      0 1px 3px rgba(0, 0, 0, 0.08);
+    border-color: #ff4b2b;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    line-height: 1.5;
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    /* user-select: none; */
+  }
+
+#table{
+    text-align: center;
+    border: 1px solid groove;
+    width: 100%;
+}
