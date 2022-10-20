@@ -14,7 +14,6 @@ function fileInfo(event) {
         let fileSize = file.size
         let fileExt = getFileExtention(file)
         let lastModifiedDate = file.lastModifiedDate
-        console.log(lastModifiedDate)
         return { fileName, fileSize, fileExt,lastModifiedDate }
     })
 
@@ -113,9 +112,12 @@ function showInfoOnMouseOver(file) {
     lastModifiedDate = file.lastModifiedDate
 
     // alert(`FileName : ${fileName} , FileSize: ${fileSize} , extention: ${fileExtention}`)
+    let modalContainer =  document.getElementById("modalContainer")
+    modalContainer.innerHTML = ' '
+    
 
-    let div = document.createElement("div")
-    div.innerHTML = `<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    let modalDiv = document.createElement("div")
+    modalDiv.innerHTML = `<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -195,7 +197,7 @@ function showInfoOnMouseOver(file) {
       </div>
       </div>`
 
-    document.body.appendChild(div)
+      modalContainer.appendChild(modalDiv)
 
 }
 
