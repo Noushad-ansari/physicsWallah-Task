@@ -131,61 +131,50 @@ function showInfoOnMouseOver(file) {
 
           <!-- //file info container -->
           <div class="main-content">
-        <div class="header bg-gradient-primary pb-8 pt-2 pt-md-8">
-          <div class="container-fluid ">
-            <div class="header-body">
-              <div class="row">
-                <div class="col-xl-12 col-lg-8 col-sm-12">
-                  <div class="card card-stats mb-4 mb-xl-0">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col">
-                          <h5
-                            class="card-title text-uppercase text-primary mb-0"
+            <div class="header bg-gradient-primary pb-8 pt-2 pt-md-8">
+              <div class="container-fluid ">
+                <div class="header-body">
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-sm-12 bg-danger">
+                      <div class="card card-stats mb-4 mb-xl-0">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col">
+                              <h5 class="card-title text-uppercase text-primary mb-0">
+                                File Name
+                              </h5>
+                              <span class="h2 font-weight-normal mb-0">${fileName}</span>
+                            </div>
+                            <div class="col-auto">
+                              <h5
+                                class="card-title text-uppercase text-success bmb-0"
+                              >
+                                Extention
+                              </h5>
+                              <span class="h2 font-weight-normal mb-0">.${fileExtention}</span>
+                            </div>
+                          </div>
+                          <p class="mt-3 mb-0 text-muted text-sm">
+                            <a
+                              href="#"
+                              class="text-danger mr-2"
+                              download
+                              ><i class="fa fa-arrow-up"></i> File Size -
+                              ${fileSize}</a
+                            >
+                          </p>
+                          <span class="text-nowrap text-muted"
+                            >Last Modified: ${lastModifiedDate}</span
                           >
-                            File Name
-                          </h5>
-
-                          <span class="h2 font-weight-normal mb-0"
-                            >${fileName}</span
-                          >
-                        </div>
-                        <div class="col-auto">
-                          <h5
-                            class="card-title text-uppercase text-success bmb-0"
-                          >
-                            Extention
-                          </h5>
-                          <span class="h2 font-weight-normal mb-0"
-                            >.${fileExtention}</span
-                          >
-
-                          <!-- <div class="icon icon-shape bg-info badge-info text-white rounded shadow">
-                            <i class="fas fa-chart-bar p-2"> Extention &nbsp; .${fileExtention}</i>
-                          </div> -->
                         </div>
                       </div>
-                      <p class="mt-3 mb-0 text-muted text-sm">
-                        <a
-                          href="#"
-                          class="text-danger mr-2"
-                          download
-                          ><i class="fa fa-arrow-up"></i> File Size -
-                          ${fileSize}</a
-                        >
-                      </p>
-                      <span class="text-nowrap text-muted"
-                        >Last Modified: ${lastModifiedDate}</span
-                      >
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- ******* -->
+          <!-- ******* -->
             
     
 
